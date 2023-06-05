@@ -1,0 +1,67 @@
+- post /login:		-> Error: phone không tồn tại, password sai, null
+ 	{
+	phone: "",
+	password: ""
+	}
+
+- post /register:		-> Error: phone bị trùng, email bị trùng, null
+	{
+	name: "",
+	phone: "",
+	email: "",
+	password: "",
+	age: "",
+	gender: "",
+	address: "",
+	}
+
+- get /status:
+	{
+	status: "",
+	status-sensor: "",
+	status-led: "",
+	status-buzzer: "",
+	}
+
+- get /profile:		
+
+- put /update-profile:	-> Error: phone bị trùng, email bị trùng, null
+	{
+	id: "",
+	...
+	}
+
+- put /change-password:
+	{
+	id: "",
+	old-password: "",
+	new-password: "",
+	}
+
+- post /history-page:
+	{
+	id: ""
+	page: ""
+	} 
+	
+	-> result: Có thêm 1 trường number-of-pages
+
+- post /history-save:
+	{
+	id: ""
+	id-history: ""
+	}
+
+- post /history-delete:		-> Error: Xóa không thành công lịch sử yêu cầu không tồn tại
+	{
+	id: ""
+	id-history: ""
+	}
+
+- post /history-delete-all:	-> Error: Xóa không thành công lịch sử yêu cầu không tồn tại
+	{
+	id: ""	
+	}
+
+Note: - authentication bearer jwt
+	- verify email

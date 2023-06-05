@@ -1,0 +1,137 @@
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name":"MINH",
+    "phone": "0332060870",
+    "email": "minh@gmail.com",
+    "password": "1",
+    "age": 18,
+    "gender": "male",
+    "address": "Tp.hcm"
+}
+
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "phone":"11111111",
+    "password": "1"
+}
+
+
+
+###
+GET http://localhost:5000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDViMzQyZjAzNDQzNzQ4ZjEwOTc0MzEiLCJpYXQiOjE2ODM2OTg3MzUsImV4cCI6MTY4MzY5OTkzNX0.5TF9MjTw9H198MJ1QN8hb_XoQkmcGguhFl-yMvfR90w
+
+
+
+###
+PUT http://localhost:5000/update-profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDViMzQyZjAzNDQzNzQ4ZjEwOTc0MzEiLCJpYXQiOjE2ODM2OTg3MzUsImV4cCI6MTY4MzY5OTkzNX0.5TF9MjTw9H198MJ1QN8hb_XoQkmcGguhFl-yMvfR90w
+Content-Type: application/json
+
+{
+    "name":"MINH CAO",
+    "phone": "0332060875",
+    "email": "minhminh@gmail.com",
+    "age": 18,
+    "gender": "male",
+    "address": "Tp.hcm"
+}
+
+
+
+###
+GET http://localhost:5000/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVlODRiNDk3OWNhOTU4MWQxNjZmMGMiLCJpYXQiOjE2ODU1ODk2NjQsImV4cCI6MTY4NTU5Njg2NH0.NnC0CrppnSV4VQCQ4db3J03-yvch78ufrTsa_gwhSlA
+
+
+
+###
+GET http://localhost:5000/status/change
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVlODRiNDk3OWNhOTU4MWQxNjZmMGMiLCJpYXQiOjE2ODU2MDU1NDQsImV4cCI6MTY4NTYxMjc0NH0.nJSzn7WfZ-AvhofsglFOzqu2kM40lDsJBguNdTgYVws
+
+
+
+
+###
+POST http://localhost:5000/status/led
+Authorization: Beare eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVlODRiNDk3OWNhOTU4MWQxNjZmMGMiLCJpYXQiOjE2ODU1ODk2NjQsImV4cCI6MTY4NTU5Njg2NH0.NnC0CrppnSV4VQCQ4db3J03-yvch78ufrTsa_gwhSlA
+Content-Type: application/json
+
+{
+    "message" : "1"
+}
+
+
+
+
+###
+POST http://localhost:5000/status/buzzer
+Authorization: Beare eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVlODRiNDk3OWNhOTU4MWQxNjZmMGMiLCJpYXQiOjE2ODU1ODk2NjQsImV4cCI6MTY4NTU5Njg2NH0.NnC0CrppnSV4VQCQ4db3J03-yvch78ufrTsa_gwhSlA
+Content-Type: application/json
+
+{
+    "message" : "1"
+}
+
+
+###
+POST http://localhost:5000/status/sensor
+Authorization: Beare eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVlODRiNDk3OWNhOTU4MWQxNjZmMGMiLCJpYXQiOjE2ODU2MDU1NDQsImV4cCI6MTY4NTYxMjc0NH0.nJSzn7WfZ-AvhofsglFOzqu2kM40lDsJBguNdTgYVws
+Content-Type: application/json
+
+{
+    "message" : "1"
+}
+
+
+
+
+###
+GET http://localhost:5000/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVlODRiNDk3OWNhOTU4MWQxNjZmMGMiLCJpYXQiOjE2ODU2ODQ1MjgsImV4cCI6MTY4NTY5MTcyOH0.pFQ0Zo2REv970I035tULsGBDJCedTABv8JlPJbDHacA
+Content-Type: application/json
+
+{
+    "page": "1"
+}
+
+
+
+
+###
+DELETE http://localhost:5000/history/delete/647955a03e43730156ca829d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVlODRiNDk3OWNhOTU4MWQxNjZmMGMiLCJpYXQiOjE2ODU2ODQ1MjgsImV4cCI6MTY4NTY5MTcyOH0.pFQ0Zo2REv970I035tULsGBDJCedTABv8JlPJbDHacA
+
+
+
+
+###
+DELETE http://localhost:5000/history/delete-many
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDViMzE3MzYzZTBiZDAzZGMwYzRhOTgiLCJpYXQiOjE2ODM2OTgwNDksImV4cCI6MTY4MzcwNTI0OX0.RUTS3YcMw743vjcWhIqLlpV7vuTYaGJp-q2akR2VCnw
+Content-Type: application/json
+
+{
+    "ids" : ["645b46c2fe5eee176fca838b", "645b46c9fe5eee176fca838d"]
+}
+
+
+
+
+
+
+
+
+###
+DELETE http://localhost:5000/history/delete-all
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDViMzE3MzYzZTBiZDAzZGMwYzRhOTgiLCJpYXQiOjE2ODM2OTgwNDksImV4cCI6MTY4MzcwNTI0OX0.RUTS3YcMw743vjcWhIqLlpV7vuTYaGJp-q2akR2VCnw
+
+
+
