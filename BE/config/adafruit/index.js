@@ -12,7 +12,7 @@ function connectAda() {
         port: 1883,
         connectTimeout: 4000,
         username: 'minhcao2000',
-        password: 'aio_OUjI60yg8kG7e3kNWgOYpihkDasw',
+        password: '',
         reconnectPeriod: 1000,
     })
     client.on('connect', () => {

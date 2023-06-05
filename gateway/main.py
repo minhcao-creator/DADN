@@ -5,7 +5,7 @@ from uart import*
 
 AIO_FEED_ID = ["bbc-alarm", "bbc-led", "sensor"]
 AIO_USERNAME = "minhcao2000"
-AIO_KEY = "aio_xUzu42ZHI68ZiLhdORDi8vVWCily"
+AIO_KEY = ""
 
 def connected(client):
     print("Ket noi thanh cong ...")
